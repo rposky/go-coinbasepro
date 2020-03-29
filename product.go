@@ -16,6 +16,16 @@ type Product struct {
 	BaseMinSize    string `json:"base_min_size"`
 	BaseMaxSize    string `json:"base_max_size"`
 	QuoteIncrement string `json:"quote_increment"`
+	// Used in WebSocket Feed "status" channel
+	BaseIncrement  string `json:"base_increment"`
+	DisplayName    string `json:"display_name"`
+	Status         string `json:"status"`
+	StatusMessage  string `json:"status_message"`
+	MinMarketFunds string `json:"min_market_funds"`
+	MaxMarketFunds string `json:"max_market_funds"`
+	PostOnly       bool   `json:"post_only"`
+	LimitOnly      bool   `json:"limit_only"`
+	CancelOnly     bool   `json:"cancel_only"`
 }
 
 type Ticker struct {

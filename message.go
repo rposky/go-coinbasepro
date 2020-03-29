@@ -37,6 +37,8 @@ type Message struct {
 	UserID        string           `json:"user_id"`
 	ProfileID     string           `json:"profile_id"`
 	LastTradeID   int              `json:"last_trade_id"`
+	Products      []Product        `json:"products"`
+	Currencies    []Currency       `json:"currencies"`
 }
 
 type MessageChannel struct {
